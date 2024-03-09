@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário básico</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h2>Formulário HTML</h2>
+    <form action="register.php" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="text" name="idade">
+        </div>
+        <div>
+            <label for="profissao">Selecione a sua profissão:</label>
+            <select name="profissao">
+                <option value="programador">Programador</option>
+                <option value="devops">DevOps</option>
+                <option value="projeto">Gerente de Projetos</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div>
+            <label for="contrato">Voce leu os termos do contrato:</label>
+            <select name="contrato">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+        <div>
+            <label for="opcionais">Selecione os opcionais desejados:</label>
+            <select name="opicionais" multiple>
+                <option value="aro25">Aro 25"</option>
+                <option value="couro">Couro sintético</option>
+                <option value="multi11">Multimídia 11"</option>
+                <option value="soleira">Soleiras de porta"</option>
+                <option value="preto">Acabamentos Black"</option>
+            </select>
+        </div>
+        <div>
+            <label for="descricao">Descreva o problema:</label>
+            <textarea name="descricao"></textarea>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="first">Primeiro Nome</label>
+                <input type="text" name="first">
+                <label for="midle">Nome do meio</label>
+                <input type="text" name="midle">
+                <label for="last">Último Nome</label>
+                <input type="text" name="last">
+            </fieldset>
+        </div>
+        <div>
+            <label for="sabor">Escolha o sabor:</label>
+            <input type="text" name="sabor" list="selecao">
+            <datalist id="selecao">
+                <option value="Chocolate"></option>
+                <option value="Maça"></option>
+                <option value="Banana"></option>
+                <option value="Morango"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="senha">Digite a sua senha:</label>
+            <input type="password" name="senha">
+        </div>
+        <div>
+            <label for="motor">Selecione o motor do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="1T" name="motor">
+                <label for="1T">1.0 Turbo</label>
+                <input type="radio" value="1.3T" name="motor">
+                <label for="1.3T">1.3 Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="1a" name="motor">
+                <label for="1a">1.0 Aspirado</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="1.6a" name="motor">
+                <label for="1.6a">1.6 Aspirado</label>
+            </div>
+        </div>
+        <div>
+            <label for="cor">Selecione a cor:</label>
+            <div class="radio">
+                <input type="checkbox" value="branco" name="cor[]">
+                <label for="branco">Branco</label>
+                <input type="checkbox" value="azul" name="cor[]">
+                <label for="azul">Azul</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="Laranja" name="cor[]">
+                <label for="laranja">Laranja</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" value="vermelho" name="cor[]">
+                <label for="vermelho">Vermelho</label>
+            </div>
+        </div>
+        <div>
+            <label for="senha">Digita a sua senha:</label>
+            <input type="password" name="senha">
+        </div>
+        <div>
+            <label for="arquivo">Selecione o seu arquivo:</label>
+            <input type="file" name="arquivo">
+        </div>
+        <div>
+            <label for="nascimento">Digita a sua data de nascimento:</label>
+            <input type="date" name="nescimento">
+        </div>
+        <div>
+            <label for="email">Digita o seu e-mail:</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="default">Digita o seu endereço:</label>
+            <input type="text"  value="Rua das Oliveiras  (padão)" name="default">
+        </div>
+        <div>
+            <label for="nada">Tente mudar o texto:</label>
+            <input type="text"  value="Não envia pro backend" name="nada" disabled>
+        </div>
+        <div>
+            <label for="dica">Entre com a sua profissão:</label>
+            <input type="text"  name="dica" placeholder="A ocupação atual">
+        </div>
+        <div>
+            <label for="requerido">Entre com o nome do seu Pai:</label>
+            <input type="text"  name="requerido" required>
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar os dados">
+</body>
+</html> 

@@ -1,0 +1,29 @@
+/* * {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-size: border-box;
+} */
+
+:root {
+  --cor1: #cec9c9;
+  --cor2: #2e2a2a;
+}
+
+body {
+  padding-bottom: 500px;
+  background-color: var(--cor1);
+
+}
+div {
+    padding-bottom: 10px;
+}
+div input,
+div label  {
+    display: block;
+}
+.radio label,
+.radio input,
+.radio span {
+  display: inline-block;
+}
